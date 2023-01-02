@@ -2,6 +2,7 @@
     "default": {
         "feature_resolution_enable": true,
         "isSkipfusion": true,
+        "feature_enable_fwk_timer": false,
         "limitSizeListForCts":[
         4096, 3072,
         4000, 3008,
@@ -65,5 +66,9 @@
             "3200x2400",
             "2592x1944"
         ]
+    },
+    "com.taikang.tailife": {
+        "previewSizeForAPI1Width": 1920,
+        "previewSizeForAPI1Height": 1080
     }
 }

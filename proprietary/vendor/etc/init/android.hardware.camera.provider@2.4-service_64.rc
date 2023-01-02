@@ -6,10 +6,9 @@
 #
 
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-    override
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
     interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
-    interface vendor.qti.hardware.camera.cameraextension@1.0::ICameraExtensionService cameraextensionservice
+    interface vendor.oplus.hardware.cameraextension@1.0::ICameraExtensionService cameraextensionservice
     class hal
     user cameraserver
     group audio camera input drmrpc oem_2907

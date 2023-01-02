@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/etc/camera/cfr_bin/CFR_imx766_uw.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_imx766_uw.bin \
     vendor/oneplus/martini/proprietary/odm/etc/camera/cfr_bin/CFR_s5k3m5.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_s5k3m5.bin \
     vendor/oneplus/martini/proprietary/odm/etc/camera/config/camera_unit_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_config \
+    vendor/oneplus/martini/proprietary/odm/etc/camera/config/camera_unit_feature_config.protobuf:$(TARGET_COPY_OUT_ODM)/etc/camera/config/camera_unit_feature_config.protobuf \
     vendor/oneplus/martini/proprietary/odm/etc/camera/config/imx471:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx471 \
     vendor/oneplus/martini/proprietary/odm/etc/camera/config/imx481:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx481 \
     vendor/oneplus/martini/proprietary/odm/etc/camera/config/imx766:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx766 \
@@ -264,8 +265,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/etc/camera/filters_res/overlay_p4_3_weak.png:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_res/overlay_p4_3_weak.png \
     vendor/oneplus/martini/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
     vendor/oneplus/martini/proprietary/odm/etc/camera/gasryuv_1.2_wp.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gasryuv_1.2_wp.model \
-    vendor/oneplus/martini/proprietary/odm/etc/camera/megvii/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model \
-    vendor/oneplus/martini/proprietary/odm/etc/camera/megvii/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/megvii/merged_model_post \
     vendor/oneplus/martini/proprietary/odm/etc/camera/micFilter/blue_pink_3.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/blue_pink_3.png \
     vendor/oneplus/martini/proprietary/odm/etc/camera/micFilter/curve_0.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/curve_0.png \
     vendor/oneplus/martini/proprietary/odm/etc/camera/micFilter/green_orange_2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/micFilter/green_orange_2.png \
@@ -655,6 +654,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib/libop-ai-beauty-faceretouch-cn.so \
     vendor/oneplus/martini/proprietary/odm/lib/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib/liboplus_service.so \
     vendor/oneplus/martini/proprietary/odm/lib/liboplusvppfilter.so:$(TARGET_COPY_OUT_ODM)/lib/liboplusvppfilter.so \
+    vendor/oneplus/martini/proprietary/odm/lib/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libosensehalclient.so \
     vendor/oneplus/martini/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/oneplus/martini/proprietary/odm/lib/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_stub.so \
     vendor/oneplus/martini/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
@@ -709,7 +709,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
     vendor/oneplus/martini/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
     vendor/oneplus/martini/proprietary/odm/lib/rfsa/adsp/libworker_pool.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libworker_pool.so \
-    vendor/oneplus/martini/proprietary/odm/lib/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so \
+    vendor/oneplus/martini/proprietary/odm/lib/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/anc.capacitive.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.capacitive.hal.so \
     vendor/oneplus/martini/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/oneplus/martini/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
@@ -885,6 +885,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib64/liboptical_zoom_dc.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_dc.so \
     vendor/oneplus/martini/proprietary/odm/lib64/liboptical_zoom_vs.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_vs.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/oneplus/martini/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_process.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_stub.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libpnscr2.so:$(TARGET_COPY_OUT_ODM)/lib64/libpnscr2.so \
@@ -925,12 +926,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/oneplus/martini/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
+    vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.engcamera@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.engcamera@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
@@ -1760,11 +1763,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/oneplus/martini/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.oplus.hardware.extcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.extcamera@1.0.so \
+    vendor/oneplus/martini/proprietary/vendor/lib/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.diaghal@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so \
-    vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.camera.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.cameraextension@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/oneplus/martini/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0.so \
@@ -2004,6 +2006,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvp_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_util.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
+    vendor/oneplus/martini/proprietary/vendor/lib64/libcwb_sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_sm8350.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
@@ -2231,7 +2234,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
+    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -2251,8 +2257,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \

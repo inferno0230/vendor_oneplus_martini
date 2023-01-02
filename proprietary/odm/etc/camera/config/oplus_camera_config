@@ -22,6 +22,20 @@
 },
 
 {
+  "VendorTag": "com.oplus.thermal.pause.video.preview.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.thermal.pause.video.preview.black.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.quick.video.support",
   "Type": "Byte",
   "Count": "1",
@@ -1118,6 +1132,13 @@
     "Type": "Int32",
     "Count": "1",
     "Value": "3"
+},
+
+{
+    "VendorTag": "com.oplus.filter.need.extra.support",
+    "Type": "Byte",
+    "Count": "1",
+    "Value": "1"
 },
 
 {
