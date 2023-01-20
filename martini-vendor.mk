@@ -614,6 +614,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib/libVDUpScale.so:$(TARGET_COPY_OUT_ODM)/lib/libVDUpScale.so \
     vendor/oneplus/martini/proprietary/odm/lib/libWaterMode.so:$(TARGET_COPY_OUT_ODM)/lib/libWaterMode.so \
     vendor/oneplus/martini/proprietary/odm/lib/libXDocProcessSDK.so:$(TARGET_COPY_OUT_ODM)/lib/libXDocProcessSDK.so \
+    vendor/oneplus/martini/proprietary/odm/lib/lib_lvacfs.so:$(TARGET_COPY_OUT_ODM)/lib/lib_lvacfs.so \
     vendor/oneplus/martini/proprietary/odm/lib/lib_rectify.so:$(TARGET_COPY_OUT_ODM)/lib/lib_rectify.so \
     vendor/oneplus/martini/proprietary/odm/lib/libaiboost.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost.so \
     vendor/oneplus/martini/proprietary/odm/lib/libaiboost_QnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost_QnnHtpAltPrepStub.so \
@@ -649,6 +650,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib/libcom.oplus.calidatacontainer.so:$(TARGET_COPY_OUT_ODM)/lib/libcom.oplus.calidatacontainer.so \
     vendor/oneplus/martini/proprietary/odm/lib/libhyperlapse.so:$(TARGET_COPY_OUT_ODM)/lib/libhyperlapse.so \
     vendor/oneplus/martini/proprietary/odm/lib/libimgClarityEvaluate.so:$(TARGET_COPY_OUT_ODM)/lib/libimgClarityEvaluate.so \
+    vendor/oneplus/martini/proprietary/odm/lib/liblvacfs_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib/liblvacfs_wrapper.so \
     vendor/oneplus/martini/proprietary/odm/lib/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib/libmpbase.so \
     vendor/oneplus/martini/proprietary/odm/lib/libop-ai-beauty-body-detection.so:$(TARGET_COPY_OUT_ODM)/lib/libop-ai-beauty-body-detection.so \
     vendor/oneplus/martini/proprietary/odm/lib/libop-ai-beauty-faceretouch-cn.so:$(TARGET_COPY_OUT_ODM)/lib/libop-ai-beauty-faceretouch-cn.so \
