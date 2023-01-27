@@ -9,8 +9,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/martini/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
-    vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
-    vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/martini/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/martini/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
@@ -469,17 +467,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/martini/proprietary/odm/etc/init/calibrationOutput_uw.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw.rc \
     vendor/oneplus/martini/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/oneplus/martini/proprietary/odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
-    vendor/oneplus/martini/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/martini/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/martini/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm.lst \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm10.txt \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm11.txt \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/inParm12.txt \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck.txt \
-    vendor/oneplus/martini/proprietary/odm/etc/inparm/irissoft/mcfCheck_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck_low.txt \
-    vendor/oneplus/martini/proprietary/odm/etc/irissoft.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft.fw \
     vendor/oneplus/martini/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/martini/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/martini/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
@@ -891,20 +880,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib64/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_process.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libosie_stub.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libpnscr2.so:$(TARGET_COPY_OUT_ODM)/lib64/libpnscr2.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisPCS.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirispq.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirispq.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisservice.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirissoft.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsoftirisPCS.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libqtigef.so:$(TARGET_COPY_OUT_ODM)/lib64/libqtigef.so \
     vendor/oneplus/martini/proprietary/odm/lib64/librfapis.so:$(TARGET_COPY_OUT_ODM)/lib64/librfapis.so \
     vendor/oneplus/martini/proprietary/odm/lib64/librpmbengclient.so:$(TARGET_COPY_OUT_ODM)/lib64/librpmbengclient.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_ODM)/lib64/libsl_fp_impl.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/libsnapdragoncolor-pxlw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnapdragoncolor-pxlw.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v3.so \
     vendor/oneplus/martini/proprietary/odm/lib64/libsnpe_htp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_htp.so \
@@ -938,9 +917,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/oneplus/martini/proprietary/odm/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/martini/proprietary/odm/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so \
@@ -1056,7 +1032,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/oneplus/martini/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -2009,11 +1984,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvp_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_util.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libcwb_sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcwb_sm8350.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
@@ -2049,7 +2022,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libhwconfigurationutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwconfigurationutil.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
@@ -2116,8 +2088,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisfeature.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirishalwrapper.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
@@ -2172,14 +2142,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
@@ -2239,7 +2206,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cameraextension@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
-    vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.performance@1.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/martini/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
@@ -2368,6 +2334,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.servicetracker@1.2-service \
     manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_oplus_fingerprint \
-    vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service
+    manifest_oplus_fingerprint
