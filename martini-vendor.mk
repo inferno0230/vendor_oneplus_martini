@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/martini/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/oneplus/martini/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
     vendor/oneplus/martini/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/oneplus/martini/proprietary/odm/etc/bt/btsar.cfg:$(TARGET_COPY_OUT_ODM)/etc/bt/btsar.cfg \
+    vendor/oneplus/martini/proprietary/odm/etc/bt/hpnv10.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv10.bin \
+    vendor/oneplus/martini/proprietary/odm/etc/bt/hpnv10_ch1.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv10_ch1.bin \
     vendor/oneplus/martini/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/martini/proprietary/odm/etc/camera/anc/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model \
     vendor/oneplus/martini/proprietary/odm/etc/camera/anc/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model_post \
